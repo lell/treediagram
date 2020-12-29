@@ -1,46 +1,32 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'TreeDiagram: Visualization for tree-based methods'
 tags:
-  - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - R
+  - classification
+  - random forests
+  - decision trees
+  - visualization
 authors:
-  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
+  - name: Wendy Wang
+    affiliation: 1
+  - name: Shufei Ge
+    affiliation: "1, 2"
+  - name: Lloyd T. Elliott
+    affiliation: 1
     orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
-    affiliation: 2
-  - name: Author with no affiliation
-    affiliation: 3
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: Department of Statistics and Actuarial Science, Simon Fraser University
    index: 1
- - name: Institution Name
+ - name: Institute of Mathematical Sciences, ShanghaiTech University
    index: 2
- - name: Independent Researcher
-   index: 3
-date: 13 August 2017
+date: 11 January 2021
 bibliography: paper.bib
 
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+Methods such as decision trees, linkage based clustering (dendrograms), binary space partitioning, and Ward's algorithm all provide hierarchical clusterings in which the data are organised at the leaves of a tree. Visualization of how the data lies within these trees is difficult (the tree can be large, unbalanced, or have internal nodes which do not linearly separate the data). In this work, we develop and implement a new method for visualizing hierarchical clusterings in which each tree split is associated with density plots and one-dimensional projections of the partitioned data. These projections are then rotated and translated within a single canvas, forming a fractal-like organisation from which the nature of the clustering can be readily appreciated. We apply this work to visualization of  four data sets involving breast cancer, ozone concentration, Higgs bosons and liver data. We can then report observations about the examined datasets including linear separability, and balance of the decision trees.
 
 # Statement of need
 
