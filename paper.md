@@ -11,6 +11,8 @@ authors:
     affiliation: 1
   - name: Shufei Ge
     affiliation: "1, 2"
+  - name: Shijia Wang
+    affiliation: "1, 3"
   - name: Lloyd T. Elliott
     affiliation: 1
     orcid: 0000-0003-0872-7098
@@ -19,6 +21,8 @@ affiliations:
    index: 1
  - name: Institute of Mathematical Sciences, ShanghaiTech University
    index: 2
+ - name: School of Statistics and Data Science, LPMC and KLMDASR
+   index: 3
 date: 11 January 2021
 bibliography: paper.bib
 
